@@ -59,9 +59,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 							<configuration>
 								<links>
 									<link>https://www.aoindustries.com/docs/ao-appcluster-core/</link>
-									<link>https://www.aoindustries.com/docs/ao-cron/</link>
 									<link>https://www.aoindustries.com/docs/aocode-public/</link>
-									<link>http://www.dnsjava.org/doc/</link>
 								</links>
 							</configuration>
 						</plugin>
@@ -79,18 +77,8 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId>
-			<artifactId>ao-cron</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.aoindustries</groupId>
 			<artifactId>aocode-public</artifactId>
 			<version>1.8.0</version>
-		</dependency>
-		<dependency>
-			<groupId>dnsjava</groupId>
-			<artifactId>dnsjava</artifactId>
-			<version>2.1.7</version>
 		</dependency>
 	</dependencies>
 </project>
