@@ -58,8 +58,8 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 							<artifactId>maven-javadoc-plugin</artifactId>
 							<configuration>
 								<links>
-									<link>https://www.aoindustries.com/docs/ao-appcluster-core/</link>
-									<link>https://www.aoindustries.com/docs/aocode-public/</link>
+									<link>https://www.aoindustries.com/ao-appcluster/core/apidocs/</link>
+									<link>https://www.aoindustries.com/aocode-public/apidocs/</link>
 								</links>
 							</configuration>
 						</plugin>
