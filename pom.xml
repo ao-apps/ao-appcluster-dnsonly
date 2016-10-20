@@ -32,7 +32,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.aoindustries</groupId>
 	<artifactId>ao-appcluster-dnsonly</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>AO AppCluster DNS Only</name>
@@ -44,7 +44,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/ao-appcluster-dnsonly.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-appcluster-dnsonly.git</developerConnection>
 		<url>http://github.com/aoindustries/ao-appcluster-dnsonly</url>
-		<tag>HEAD</tag>
+		<tag>ao-appcluster-dnsonly-1.0.1</tag>
 	</scm>
 
 	<profiles>
