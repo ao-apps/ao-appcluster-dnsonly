@@ -38,8 +38,6 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<bookPath>/${project.parent.artifactId}/dnsonly</bookPath>
 		<shortTitle>DNS Only</shortTitle>
-		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.url}">${project.parent.name}</a>
-/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 	</properties>
 
 	<name>AO AppCluster DNS Only</name>
