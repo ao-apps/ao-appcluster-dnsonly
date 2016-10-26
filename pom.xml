@@ -41,7 +41,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	</properties>
 
 	<name>AO AppCluster DNS Only</name>
-	<url>${project.parent.url}dnsonly/</url>
+	<url>https://www.aoindustries.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
 	<description>Application-level clustering tools to monitor DNS for component states.</description>
 	<inceptionYear>2011</inceptionYear>
 
