@@ -36,12 +36,11 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/${project.parent.artifactId}/dnsonly</bookPath>
 		<shortTitle>DNS Only</shortTitle>
 	</properties>
 
 	<name>AO AppCluster DNS Only</name>
-	<url>https://aoindustries.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://aoindustries.com/${project.parent.artifactId}/dnsonly/</url>
 	<description>Application-level clustering tools to monitor DNS for component states.</description>
 	<inceptionYear>2011</inceptionYear>
 
