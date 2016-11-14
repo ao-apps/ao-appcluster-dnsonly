@@ -26,8 +26,9 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 
 	<parent>
 		<groupId>com.aoindustries</groupId>
-		<artifactId>ao-appcluster</artifactId>
-		<version>1.0.2-SNAPSHOT</version>
+		<artifactId>ao-oss-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.aoindustries</groupId>
@@ -36,11 +37,13 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>jar</packaging>
 
 	<properties>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://aoindustries.com/ao-appcluster/">AO AppCluster</a>
+/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<shortTitle>DNS Only</shortTitle>
 	</properties>
 
 	<name>AO AppCluster DNS Only</name>
-	<url>https://aoindustries.com/${project.parent.artifactId}/dnsonly/</url>
+	<url>https://aoindustries.com/ao-appcluster/dnsonly/</url>
 	<description>Application-level clustering tools to monitor DNS for component states.</description>
 	<inceptionYear>2011</inceptionYear>
 
