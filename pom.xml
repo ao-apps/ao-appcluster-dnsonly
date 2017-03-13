@@ -67,7 +67,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 							<configuration>
 								<links>
 									<link>https://aoindustries.com/ao-appcluster/core/apidocs/</link>
-									<link>https://aoindustries.com/aocode-public/apidocs/</link>
+									<link>https://aoindustries.com/ao-lang/apidocs/</link>
 								</links>
 							</configuration>
 						</plugin>
@@ -85,8 +85,8 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId>
-			<artifactId>aocode-public</artifactId>
-			<version>1.8.3</version>
+			<artifactId>ao-lang</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
