@@ -55,7 +55,7 @@ public class DnsOnlyResourcePropertiesConfiguration extends ResourcePropertiesCo
 	public Set<? extends DnsOnlyResourceNodePropertiesConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException {
 		String resourceId = getId();
 		Set<String> nodeIds = properties.getUniqueStrings("appcluster.resource."+id+".nodes", true);
-		Set<DnsOnlyResourceNodePropertiesConfiguration> resourceNodes = new LinkedHashSet<DnsOnlyResourceNodePropertiesConfiguration>(nodeIds.size()*4/3+1);
+		Set<DnsOnlyResourceNodePropertiesConfiguration> resourceNodes = new LinkedHashSet<>(nodeIds.size()*4/3+1);
 		for(String nodeId : nodeIds) {
 			if(!resourceNodes.add(new DnsOnlyResourceNodePropertiesConfiguration(properties, resourceId, nodeId, type))) throw new AssertionError();
 		}
