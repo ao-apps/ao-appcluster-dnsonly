@@ -29,7 +29,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../../ao-oss-parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-dnsonly</artifactId><version>1.1.0-validation-SNAPSHOT</version>
+	<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-dnsonly</artifactId><version>1.1.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -61,6 +61,7 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 						<configuration>
 							<links>
 								<link>${javac.link.javaApi}</link>
+								<!-- Direct -->
 								<link>https://aoindustries.com/ao-appcluster/core/apidocs/</link>
 								<link>https://aoindustries.com/ao-lang/apidocs/</link>
 							</links>
@@ -71,12 +72,35 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 		</profile>
 	</profiles>
 
+	<dependencyManagement>
+		<dependencies>
+			<!-- Direct -->
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-core</artifactId><version>1.1.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-core</artifactId><version>1.1.1-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>2.1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>2.1.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
+		<!-- Direct -->
 		<dependency>
-			<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-core</artifactId><version>1.1.0-validation-SNAPSHOT</version>
+			<groupId>com.aoindustries</groupId><artifactId>ao-appcluster-core</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId><version>2.1.0-SNAPSHOT</version>
+			<groupId>com.aoindustries</groupId><artifactId>ao-lang</artifactId>
 		</dependency>
 	</dependencies>
 </project>
