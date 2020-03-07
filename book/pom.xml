@@ -35,8 +35,6 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.artifactId>ao-appcluster-dnsonly</documented.artifactId>
-		<documented.javaVersion>1.8</documented.javaVersion>
-		<documented.javac.link.javaApi>${javac.link.javaApi.jdk8}</documented.javac.link.javaApi>
 		<documented.name>AO AppCluster DNS Only</documented.name>
 		<documented.shortTitle>DNS Only</documented.shortTitle>
 		<documented.description>Application-level clustering tools to monitor DNS for component states.</documented.description>
