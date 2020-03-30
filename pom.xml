@@ -44,7 +44,6 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	<inceptionYear>2011</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/aoindustries/ao-appcluster-dnsonly.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/ao-appcluster-dnsonly.git</developerConnection>
 		<url>https://github.com/aoindustries/ao-appcluster-dnsonly</url>
