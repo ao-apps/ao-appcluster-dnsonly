@@ -29,7 +29,6 @@ import com.aoindustries.appcluster.ResourceNode;
 import com.aoindustries.appcluster.ResourcePropertiesConfiguration;
 import com.aoindustries.collections.AoCollections;
 import java.util.Collection;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -55,7 +54,7 @@ public class DnsOnlyResourcePropertiesConfiguration extends ResourcePropertiesCo
 	public Set<? extends DnsOnlyResourceNodePropertiesConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException {
 		String resourceId = getId();
 		Set<String> nodeIds = properties.getUniqueStrings("appcluster.resource."+id+".nodes", true);
-		Set<DnsOnlyResourceNodePropertiesConfiguration> resourceNodes = new LinkedHashSet<>(nodeIds.size()*4/3+1);
+		Set<DnsOnlyResourceNodePropertiesConfiguration> resourceNodes = AoCollections.newLinkedHashSet(nodeIds.size());
 		for(String nodeId : nodeIds) {
 			if(!resourceNodes.add(new DnsOnlyResourceNodePropertiesConfiguration(properties, resourceId, nodeId, type))) throw new AssertionError();
 		}
