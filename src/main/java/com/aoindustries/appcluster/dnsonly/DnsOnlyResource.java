@@ -1,6 +1,6 @@
 /*
  * ao-appcluster-dnsonly - Application-level clustering tools to monitor DNS for component states.
- * Copyright (C) 2011, 2016  AO Industries, Inc.
+ * Copyright (C) 2011, 2016, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -35,12 +35,12 @@ import java.util.Collection;
  *
  * @author  AO Industries, Inc.
  */
-public class DnsOnlyResource extends Resource<DnsOnlyResource,DnsOnlyResourceNode> {
+public class DnsOnlyResource extends Resource<DnsOnlyResource, DnsOnlyResourceNode> {
 
 	private final DnsOnlyResourceConfiguration resourceConfiguration;
 	private final boolean allowMultiMaster;
 
-	protected DnsOnlyResource(AppCluster cluster, DnsOnlyResourceConfiguration resourceConfiguration, Collection<? extends ResourceNode<?,?>> resourceNodes) throws AppClusterConfigurationException {
+	protected DnsOnlyResource(AppCluster cluster, DnsOnlyResourceConfiguration resourceConfiguration, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException {
 		super(cluster, resourceConfiguration, resourceNodes);
 		this.resourceConfiguration = resourceConfiguration;
 		this.allowMultiMaster = resourceConfiguration.getAllowMultiMaster();
@@ -52,7 +52,7 @@ public class DnsOnlyResource extends Resource<DnsOnlyResource,DnsOnlyResourceNod
 	}
 
 	@Override
-	protected ResourceSynchronizer<DnsOnlyResource,DnsOnlyResourceNode> newResourceSynchronizer(DnsOnlyResourceNode localResourceNode, DnsOnlyResourceNode remoteResourceNode, ResourceConfiguration<DnsOnlyResource,DnsOnlyResourceNode> resourceConfiguration) {
+	protected ResourceSynchronizer<DnsOnlyResource, DnsOnlyResourceNode> newResourceSynchronizer(DnsOnlyResourceNode localResourceNode, DnsOnlyResourceNode remoteResourceNode, ResourceConfiguration<DnsOnlyResource, DnsOnlyResourceNode> resourceConfiguration) {
 		return null;
 	}
 }
