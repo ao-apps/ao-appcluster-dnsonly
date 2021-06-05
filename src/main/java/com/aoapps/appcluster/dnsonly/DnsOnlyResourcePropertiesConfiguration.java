@@ -20,14 +20,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.aoindustries.appcluster.dnsonly;
+package com.aoapps.appcluster.dnsonly;
 
-import com.aoindustries.appcluster.AppCluster;
-import com.aoindustries.appcluster.AppClusterConfigurationException;
-import com.aoindustries.appcluster.AppClusterPropertiesConfiguration;
-import com.aoindustries.appcluster.ResourceNode;
-import com.aoindustries.appcluster.ResourcePropertiesConfiguration;
-import com.aoindustries.collections.AoCollections;
+import com.aoapps.appcluster.AppCluster;
+import com.aoapps.appcluster.AppClusterConfigurationException;
+import com.aoapps.appcluster.AppClusterPropertiesConfiguration;
+import com.aoapps.appcluster.ResourceNode;
+import com.aoapps.appcluster.ResourcePropertiesConfiguration;
+import com.aoapps.collections.AoCollections;
 import java.util.Collection;
 import java.util.Set;
 

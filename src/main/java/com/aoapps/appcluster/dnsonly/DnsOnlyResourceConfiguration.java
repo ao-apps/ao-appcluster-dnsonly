@@ -20,22 +20,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.aoindustries.appcluster.dnsonly;
+package com.aoapps.appcluster.dnsonly;
 
-import com.aoindustries.appcluster.AppClusterConfigurationException;
-import com.aoindustries.appcluster.AppClusterPropertiesConfiguration;
-import com.aoindustries.appcluster.ResourcePropertiesConfiguration;
-import com.aoindustries.appcluster.ResourcePropertiesConfigurationFactory;
+import com.aoapps.appcluster.AppCluster;
+import com.aoapps.appcluster.AppClusterConfigurationException;
+import com.aoapps.appcluster.ResourceConfiguration;
+import com.aoapps.appcluster.ResourceNode;
+import java.util.Collection;
+import java.util.Set;
 
 /**
- * Loads the configuration for a DNS-only resource.
+ * The configuration for a DNS-only resource.
  *
  * @author  AO Industries, Inc.
  */
-public class DnsOnlyResourcePropertiesConfigurationFactory implements ResourcePropertiesConfigurationFactory<DnsOnlyResource, DnsOnlyResourceNode> {
+public interface DnsOnlyResourceConfiguration extends ResourceConfiguration<DnsOnlyResource, DnsOnlyResourceNode> {
+
+	/**
+	 * @see DnsOnlyResource#getAllowMultiMaster()
+	 */
+	boolean getAllowMultiMaster();
 
 	@Override
-	public ResourcePropertiesConfiguration<DnsOnlyResource, DnsOnlyResourceNode> newResourcePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String id) throws AppClusterConfigurationException {
-		return new DnsOnlyResourcePropertiesConfiguration(properties, id);
-	}
+	Set<? extends DnsOnlyResourceNodeConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException;
+
+	@Override
+	DnsOnlyResource newResource(AppCluster cluster, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException;
 }

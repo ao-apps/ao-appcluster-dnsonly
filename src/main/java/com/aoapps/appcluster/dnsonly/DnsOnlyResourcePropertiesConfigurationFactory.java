@@ -20,20 +20,22 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.aoindustries.appcluster.dnsonly;
+package com.aoapps.appcluster.dnsonly;
 
-import com.aoindustries.appcluster.AppClusterConfigurationException;
-import com.aoindustries.appcluster.Node;
-import com.aoindustries.appcluster.ResourceNode;
+import com.aoapps.appcluster.AppClusterConfigurationException;
+import com.aoapps.appcluster.AppClusterPropertiesConfiguration;
+import com.aoapps.appcluster.ResourcePropertiesConfiguration;
+import com.aoapps.appcluster.ResourcePropertiesConfigurationFactory;
 
 /**
- * The node settings for DNS-only synchronization.
+ * Loads the configuration for a DNS-only resource.
  *
  * @author  AO Industries, Inc.
  */
-public class DnsOnlyResourceNode extends ResourceNode<DnsOnlyResource, DnsOnlyResourceNode> {
+public class DnsOnlyResourcePropertiesConfigurationFactory implements ResourcePropertiesConfigurationFactory<DnsOnlyResource, DnsOnlyResourceNode> {
 
-	protected DnsOnlyResourceNode(Node node, DnsOnlyResourceNodeConfiguration resourceNodeConfiguration) throws AppClusterConfigurationException {
-		super(node, resourceNodeConfiguration);
+	@Override
+	public ResourcePropertiesConfiguration<DnsOnlyResource, DnsOnlyResourceNode> newResourcePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String id) throws AppClusterConfigurationException {
+		return new DnsOnlyResourcePropertiesConfiguration(properties, id);
 	}
 }

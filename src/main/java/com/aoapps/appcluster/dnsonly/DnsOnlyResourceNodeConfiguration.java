@@ -20,11 +20,11 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.aoindustries.appcluster.dnsonly;
+package com.aoapps.appcluster.dnsonly;
 
-import com.aoindustries.appcluster.AppClusterConfigurationException;
-import com.aoindustries.appcluster.Node;
-import com.aoindustries.appcluster.ResourceNodeConfiguration;
+import com.aoapps.appcluster.AppClusterConfigurationException;
+import com.aoapps.appcluster.Node;
+import com.aoapps.appcluster.ResourceNodeConfiguration;
 
 /**
  * The configuration for a DNS-only resource.
