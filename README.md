@@ -9,6 +9,12 @@
 
 [![Build](https://github.com/aoindustries/ao-appcluster-dnsonly/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/ao-appcluster-dnsonly/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-appcluster-dnsonly/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-appcluster-dnsonly)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-appcluster-dnsonly&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-appcluster-dnsonly&metric=Coverage)
 
 Application-level clustering tools to monitor DNS for component states.
 
