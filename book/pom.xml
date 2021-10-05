@@ -71,20 +71,20 @@ along with ao-appcluster-dnsonly.  If not, see <http://www.gnu.org/licenses />.
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/ao-appcluster-dnsonly.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/ao-appcluster-dnsonly.git</developerConnection>
-		<url>https://github.com/aoindustries/ao-appcluster-dnsonly</url>
+		<connection>scm:git:git://github.com/ao-apps/ao-appcluster-dnsonly.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/ao-appcluster-dnsonly.git</developerConnection>
+		<url>https://github.com/ao-apps/ao-appcluster-dnsonly</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/ao-appcluster-dnsonly/issues</url>
+		<url>https://github.com/ao-apps/ao-appcluster-dnsonly/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/ao-appcluster-dnsonly/actions</url>
+		<url>https://github.com/ao-apps/ao-appcluster-dnsonly/actions</url>
 	</ciManagement>
 
 	<repositories>
