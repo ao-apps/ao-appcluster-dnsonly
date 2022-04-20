@@ -37,14 +37,14 @@ import java.util.Set;
  */
 public interface DnsOnlyResourceConfiguration extends ResourceConfiguration<DnsOnlyResource, DnsOnlyResourceNode> {
 
-	/**
-	 * @see DnsOnlyResource#getAllowMultiMaster()
-	 */
-	boolean getAllowMultiMaster();
+  /**
+   * @see DnsOnlyResource#getAllowMultiMaster()
+   */
+  boolean getAllowMultiMaster();
 
-	@Override
-	Set<? extends DnsOnlyResourceNodeConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException;
+  @Override
+  Set<? extends DnsOnlyResourceNodeConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException;
 
-	@Override
-	DnsOnlyResource newResource(AppCluster cluster, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException;
+  @Override
+  DnsOnlyResource newResource(AppCluster cluster, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException;
 }

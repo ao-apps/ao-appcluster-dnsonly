@@ -33,7 +33,7 @@ import com.aoapps.appcluster.ResourceNode;
  */
 public class DnsOnlyResourceNode extends ResourceNode<DnsOnlyResource, DnsOnlyResourceNode> {
 
-	protected DnsOnlyResourceNode(Node node, DnsOnlyResourceNodeConfiguration resourceNodeConfiguration) {
-		super(node, resourceNodeConfiguration);
-	}
+  protected DnsOnlyResourceNode(Node node, DnsOnlyResourceNodeConfiguration resourceNodeConfiguration) {
+    super(node, resourceNodeConfiguration);
+  }
 }

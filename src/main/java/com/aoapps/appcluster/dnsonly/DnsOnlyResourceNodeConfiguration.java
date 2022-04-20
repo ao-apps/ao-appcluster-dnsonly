@@ -34,6 +34,6 @@ import com.aoapps.appcluster.ResourceNodeConfiguration;
  */
 public interface DnsOnlyResourceNodeConfiguration extends ResourceNodeConfiguration<DnsOnlyResource, DnsOnlyResourceNode> {
 
-	@Override
-	DnsOnlyResourceNode newResourceNode(Node node) throws AppClusterConfigurationException;
+  @Override
+  DnsOnlyResourceNode newResourceNode(Node node) throws AppClusterConfigurationException;
 }

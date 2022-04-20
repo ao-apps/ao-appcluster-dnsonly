@@ -35,12 +35,12 @@ import com.aoapps.appcluster.ResourceNodePropertiesConfiguration;
  */
 public class DnsOnlyResourceNodePropertiesConfiguration extends ResourceNodePropertiesConfiguration<DnsOnlyResource, DnsOnlyResourceNode> implements DnsOnlyResourceNodeConfiguration {
 
-	protected DnsOnlyResourceNodePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String resourceId, String nodeId, String type) throws AppClusterConfigurationException {
-		super(properties, resourceId, nodeId);
-	}
+  protected DnsOnlyResourceNodePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String resourceId, String nodeId, String type) throws AppClusterConfigurationException {
+    super(properties, resourceId, nodeId);
+  }
 
-	@Override
-	public DnsOnlyResourceNode newResourceNode(Node node) throws AppClusterConfigurationException {
-		return new DnsOnlyResourceNode(node, this);
-	}
+  @Override
+  public DnsOnlyResourceNode newResourceNode(Node node) throws AppClusterConfigurationException {
+    return new DnsOnlyResourceNode(node, this);
+  }
 }
