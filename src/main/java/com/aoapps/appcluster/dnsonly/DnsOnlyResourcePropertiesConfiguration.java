@@ -43,7 +43,7 @@ public class DnsOnlyResourcePropertiesConfiguration extends ResourcePropertiesCo
 
   protected DnsOnlyResourcePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String id) throws AppClusterConfigurationException {
     super(properties, id);
-    this.allowMultiMaster = properties.getBoolean("appcluster.resource."+id+"."+type+".allowMultiMaster");
+    this.allowMultiMaster = properties.getBoolean("appcluster.resource." + id + "." + type + ".allowMultiMaster");
   }
 
   @Override
@@ -54,7 +54,7 @@ public class DnsOnlyResourcePropertiesConfiguration extends ResourcePropertiesCo
   @Override
   public Set<? extends DnsOnlyResourceNodePropertiesConfiguration> getResourceNodeConfigurations() throws AppClusterConfigurationException {
     String resourceId = getId();
-    Set<String> nodeIds = properties.getUniqueStrings("appcluster.resource."+id+".nodes", true);
+    Set<String> nodeIds = properties.getUniqueStrings("appcluster.resource." + id + ".nodes", true);
     Set<DnsOnlyResourceNodePropertiesConfiguration> resourceNodes = AoCollections.newLinkedHashSet(nodeIds.size());
     for (String nodeId : nodeIds) {
       if (!resourceNodes.add(new DnsOnlyResourceNodePropertiesConfiguration(properties, resourceId, nodeId, type))) {
