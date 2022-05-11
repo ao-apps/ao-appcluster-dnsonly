@@ -36,7 +36,10 @@ import com.aoapps.appcluster.ResourcePropertiesConfigurationFactory;
 public class DnsOnlyResourcePropertiesConfigurationFactory implements ResourcePropertiesConfigurationFactory<DnsOnlyResource, DnsOnlyResourceNode> {
 
   @Override
-  public ResourcePropertiesConfiguration<DnsOnlyResource, DnsOnlyResourceNode> newResourcePropertiesConfiguration(AppClusterPropertiesConfiguration properties, String id) throws AppClusterConfigurationException {
+  public ResourcePropertiesConfiguration<DnsOnlyResource, DnsOnlyResourceNode> newResourcePropertiesConfiguration(
+      AppClusterPropertiesConfiguration properties,
+      String id
+  ) throws AppClusterConfigurationException {
     return new DnsOnlyResourcePropertiesConfiguration(properties, id);
   }
 }

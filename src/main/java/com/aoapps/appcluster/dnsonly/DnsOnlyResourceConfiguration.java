@@ -38,7 +38,7 @@ import java.util.Set;
 public interface DnsOnlyResourceConfiguration extends ResourceConfiguration<DnsOnlyResource, DnsOnlyResourceNode> {
 
   /**
-   * @see DnsOnlyResource#getAllowMultiMaster()
+   * See {@link DnsOnlyResource#getAllowMultiMaster()}.
    */
   boolean getAllowMultiMaster();
 
