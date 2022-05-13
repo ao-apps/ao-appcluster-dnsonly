@@ -25,4 +25,4 @@ module com.aoapps.appcluster.dnsonly {
   // Direct
   requires com.aoapps.appcluster.core; // <groupId>com.aoapps</groupId><artifactId>ao-appcluster-core</artifactId>
   requires com.aoapps.collections; // <groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId>
-} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
+}
