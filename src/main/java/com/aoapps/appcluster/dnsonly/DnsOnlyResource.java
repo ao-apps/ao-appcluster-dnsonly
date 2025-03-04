@@ -1,6 +1,6 @@
 /*
  * ao-appcluster-dnsonly - Application-level clustering tools to monitor DNS for component states.
- * Copyright (C) 2011, 2016, 2021, 2022, 2023, 2024  AO Industries, Inc.
+ * Copyright (C) 2011, 2016, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -29,7 +29,6 @@ import com.aoapps.appcluster.Resource;
 import com.aoapps.appcluster.ResourceConfiguration;
 import com.aoapps.appcluster.ResourceNode;
 import com.aoapps.appcluster.ResourceSynchronizer;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import java.util.Collection;
 
 /**
@@ -45,7 +44,6 @@ public class DnsOnlyResource extends Resource<DnsOnlyResource, DnsOnlyResourceNo
   /**
    * Creates a new {@link DnsOnlyResource}.
    */
-  @SuppressFBWarnings("CT_CONSTRUCTOR_THROW")
   protected DnsOnlyResource(AppCluster cluster, DnsOnlyResourceConfiguration resourceConfiguration, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException {
     super(cluster, resourceConfiguration, resourceNodes);
     //this.resourceConfiguration = resourceConfiguration;
