@@ -22,7 +22,7 @@ Application-level clustering tools to monitor DNS for component states.
 * [Project Home](https://oss.aoapps.com/appcluster/dnsonly/)
 * [Changelog](https://oss.aoapps.com/appcluster/dnsonly/changelog)
 * [API Docs](https://oss.aoapps.com/appcluster/dnsonly/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-appcluster-dnsonly)
+* [Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-appcluster-dnsonly)
 * [GitHub](https://github.com/ao-apps/ao-appcluster-dnsonly)
 
 ## Contact Us
