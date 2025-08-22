@@ -38,7 +38,7 @@ import java.util.Collection;
  */
 public class DnsOnlyResource extends Resource<DnsOnlyResource, DnsOnlyResourceNode> {
 
-  //private final DnsOnlyResourceConfiguration resourceConfiguration;
+  // private final DnsOnlyResourceConfiguration resourceConfiguration;
   private final boolean allowMultiMaster;
 
   /**
@@ -46,7 +46,7 @@ public class DnsOnlyResource extends Resource<DnsOnlyResource, DnsOnlyResourceNo
    */
   protected DnsOnlyResource(AppCluster cluster, DnsOnlyResourceConfiguration resourceConfiguration, Collection<? extends ResourceNode<?, ?>> resourceNodes) throws AppClusterConfigurationException {
     super(cluster, resourceConfiguration, resourceNodes);
-    //this.resourceConfiguration = resourceConfiguration;
+    // this.resourceConfiguration = resourceConfiguration;
     this.allowMultiMaster = resourceConfiguration.getAllowMultiMaster();
   }
 
